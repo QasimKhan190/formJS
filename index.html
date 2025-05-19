@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: black;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .roll-number-space {
+      height: 60px;
+      margin-bottom: 20px;
+      border: 2px dashed #999;
+      text-align: center;
+      line-height: 60px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .result-box {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e2f0cb;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-box h3 {
+      margin-top: 0;
+    }
+
+    .result-item {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <div class="roll-number-space">
+    Roll Number: __________
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" placeholder="Enter first name">
+  </div>
+
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" placeholder="Enter last name">
+  </div>
+
+  <div class="form-group">
+    <label for="fatherName">Father Name</label>
+    <input type="text" id="fatherName" placeholder="Enter father name">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="number" id="phone" placeholder="Enter phone number">
+  </div>
+
+  <div class="form-group">
+    <label for="nic">NIC Number</label>
+    <input type="number" id="nic" placeholder="Enter NIC number">
+  </div>
+
+  <button class="submit-btn" onclick="submitForm()">Submit</button>
+
+ 
+  <div id="resultContainer"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
